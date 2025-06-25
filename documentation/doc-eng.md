@@ -8,6 +8,7 @@
 6. [Payment Flow](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#payment-flow)
 
 # Requirements
+Installation, configuration and Payment Flow are tested on:
 * OsCommerce version: 4
 * PHP Versions: 7.0.0 or higher
 
