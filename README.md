@@ -1,11 +1,11 @@
 **PNE plugin for OSCommerce**
 
 1. [Requirements](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#requirements)
-2. [Plugin Installation](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#plugin-i%CC%87nstall)
+2. [Plugin Installation](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#plugin-installation)
 3. [Manual Plugin Installation](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#manual-plugin-installation)
 4. [Plugin Configuration Workflow](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#manual-plugin-installation)
 5. [Enabling the Surcharge Fee Module](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#enabling-the-surcharge-fee-module)
-6. [Payment Flow](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#payment-flow-1)
+6. [Payment Flow](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#payment-flow)
 
 # Requirements
 * OsCommerce version: 4
