@@ -1,7 +1,11 @@
 **PNE plugin for OSCommerce**
 
-1. [Requirements]()
+1. [Requirements](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#requirements)
 2. [Plugin Installation](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#plugin-i%CC%87nstall)
+3. [Manual Plugin Installation](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#manual-plugin-installation)
+4. [Plugin Configuration Workflow](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#manual-plugin-installation)
+5. [Enabling the Surcharge Fee Module](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#enabling-the-surcharge-fee-module)
+6. [Payment Flow](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#payment-flow-1)
 
 # Requirements
 * OsCommerce version: 4
@@ -17,7 +21,7 @@ Note: this module has been tested only with OsCommerce v4+.
 
 <img src="/images/oscommerce-1-4.png" width=60% height=60%>
 
-## Manual Plugin Installation
+# Manual Plugin Installation
 
   1. Unpack the ZIP Archive. Extract the contents of the plugin-oscommerce.zip file.
   2. Upload Plugin Files. Navigate to your project directory: lib\common\modules\orderPayment. Upload the extracted contents from the plugin-oscommerce folder into this directory.
@@ -26,7 +30,7 @@ Note: this module has been tested only with OsCommerce v4+.
      * Move StoredCards.php from lib\common\modules\orderPayment to lib\frontend\design\boxes\account.
      * Move stored-cards.tpl from lib\common\modules\orderPayment to lib\frontend\themes\basic\boxes\account.
 
-## Plugin Configuration Workflow
+# Plugin Configuration Workflow
   
   1. Access the Admin Panel. Log in to the Admin Panel, then navigate to: Modules (1) -> Payment (2) -> Online (3).
   2. Verify Plugin Visibility. Ensure the **PaynetEasy** payment module is visible in the list of available payment methods.
@@ -43,7 +47,7 @@ Note: this module has been tested only with OsCommerce v4+.
   <img src="/images/oscommerce-1-1.png" width=60% height=60%>
   <img src="/images/oscommerce-1-2.png" width=60% height=60%>
   
-  ## Enabling the Surcharge Fee Module
+  # Enabling the Surcharge Fee Module
   
   1. Navigate to the Order Structure Modules. In the Admin Panel, go to:
      * Modules (1) -> Order structure (2)
@@ -57,9 +61,7 @@ Note: this module has been tested only with OsCommerce v4+.
 
   <img src="/images/oscommerce-1-3.png" width=60% height=60%>
 
-# [Payment Flow](https://github.com/annihilatoratm/opencart-doc/blob/main/doc-eng.md#payment-flow-1)
-
-  ## Payment Flow
+  # Payment Flow
 
   1. Select a Product. Browse the main menu and choose the desired product.
 
