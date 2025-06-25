@@ -1,44 +1,59 @@
-**Requirements: **
-* OsCommerce v4
-* PHP Versions >= 7.0.0 GitHub
-_Note: this module has been tested only with OsCommerce v4+._
+**PNE plugin for OSCommerce**
 
+1. [Requirements]()
+2. [Plugin Installation](https://github.com/annihilatoratm/oscommerce-doc?tab=readme-ov-file#plugin-i%CC%87nstall)
 
-# [Plugin Handle Flow](https://github.com/annihilatoratm/drupal-doc/blob/main/README.md#plugin-handle-flow-1)
+# Requirements
+* OsCommerce version: 4
+* PHP Versions: 7.0.0 or higher
 
-  ## Plugin İnstall
+Note: this module has been tested only with OsCommerce v4+.
 
-  1. Dowbnload plugin-oscommerce.zip from GitHub repository.
-  2. Go to App Shop (1) -> Local storage (2) -> Upload plugin-oscommerce.zip (3).
-  3. Click + sign in Action column to Install module from there.
+# Plugin Installation
 
-  <img src="/images/oscommerce-1-4.png" width=60% height=60%>
+1. Download the Plugin. Download the plugin-oscommerce.zip file from the designated GitHub repository.
+2. Upload the Plugin to the System. Navigate to App Shop (1) → Local storage (2), then upload the plugin-oscommerce.zip (3) file.
+3. Install the Plugin. In the list of available plugins, click the "+" icon in the Action column to install the module
 
-  ## Plugin installation (Manual)
+<img src="/images/oscommerce-1-4.png" width=60% height=60%>
 
-  1. Unpack zip.
-  2. Navigate project folder lib\common\modules\orderPayment and upload unpack contents from plugin-oscommerce there.
-  3. Move file ot_payneteasy.php from lib\common\modules\orderPayment to lib\common\modules\orderTotal if installer doesn't move.
-  4. Move file StoredCards.php from lib\common\modules\orderPayment to lib\frontend\design\boxes\account if installer doesn't move.
-  5. Move file stored-cards.tpl from lib\common\modules\orderPayment to lib\frontend\themes\basic\boxes\account if installer doesn't move.
+## Manual Plugin Installation
 
-  ## Plugin Handle Flow
+  1. Unpack the ZIP Archive. Extract the contents of the plugin-oscommerce.zip file.
+  2. Upload Plugin Files. Navigate to your project directory: lib\common\modules\orderPayment. Upload the extracted contents from the plugin-oscommerce folder into this directory.
+  3. Manually Move Files. If the installer does not automatically place the following files, move them manually:
+     * Move ot_payneteasy.php from lib\common\modules\orderPayment to lib\common\modules\orderTotal.
+     * Move StoredCards.php from lib\common\modules\orderPayment to lib\frontend\design\boxes\account.
+     * Move stored-cards.tpl from lib\common\modules\orderPayment to lib\frontend\themes\basic\boxes\account.
+
+## Plugin Configuration Workflow
   
-  1. Login inside the Admin Panel and go to Modules (1) -> Payment (2) -> Online (3)
-  2. Check the Payment Module Panel **PaynetEasy** is visible in the list of installed Payment Method, apply filter Show not installed, if for In-Active module use Show inactive filter.
-  3. Click to PaynetEasy Payment Method and click the button *Edit* (4) under the right side panel to expand the available settings
-  4. Set Enable PaynetPos to Yes, set the correct credentials, select your prefered payment method and additional settings and click Update
+  1. Access the Admin Panel. Log in to the Admin Panel, then navigate to: Modules (1) -> Payment (2) -> Online (3).
+  2. Verify Plugin Visibility. Ensure the **PaynetEasy** payment module is visible in the list of available payment methods.
+     * Use the Show not installed filter if it’s not installed yet.
+     * Use the Show inactive filter if the module is inactive.
+  3. Edit Plugin Settings. Click on the **PaynetEasy** payment method entry, then select the _Edit_ (4) button in the right-hand panel to open the configuration settings.
+  4. Configure the Plugin.
+     * Set Enable **PaynetPos** to **Yes**.
+     * Enter the correct credentials.
+     * Select your preferred payment method.
+     * Configure any additional settings as needed.
+     * Click _Update_ to save changes.
 
   <img src="/images/oscommerce-1-1.png" width=60% height=60%>
   <img src="/images/oscommerce-1-2.png" width=60% height=60%>
   
-  ## Enable SurchargeFee
+  ## Enabling the Surcharge Fee Module
   
-  1. Next go to Modules (1) -> Order structure (2)
-  2. Check the Module SurchargeFee is visible in the list. If not installed, install it.
-  3. Click to SurchargeFee and click the button Edit under the right side panel to expand the available settings
-  4. Set Display Surcharge Fee to Yes, Sort Order and click Update
-  5. Drag SurchargeFee above the Total Module so that surcharge fee if enable must be calculated under grand total.
+  1. Navigate to the Order Structure Modules. In the Admin Panel, go to:
+     * Modules (1) -> Order structure (2)
+  2. Verify Module Availability. Locate the **SurchargeFee** module in the list. If it is not yet installed, install it from the available modules list.
+  3. Configure the Module. Click on the SurchargeFee module, then click the Edit button in the right-hand panel to access the configuration settings.
+  4. Enable and Configure Settings. Set Display Surcharge Fee to _Yes_, Sort Order and click _Update_.
+     * Set Display Surcharge Fee to Yes.
+     * Set the Sort Order value according to your preference.
+     * Click _Update_ to save the configuration.
+  5. Adjust Module Order. Drag and drop the SurchargeFee module above the Total module. This ensures that the surcharge fee, if enabled, is calculated before the grand total.
 
   <img src="/images/oscommerce-1-3.png" width=60% height=60%>
 
@@ -46,20 +61,26 @@ _Note: this module has been tested only with OsCommerce v4+._
 
   ## Payment Flow
 
-  1. Please select the needed product from the main menu.
+  1. Select a Product. Browse the main menu and choose the desired product.
 
   <img src="/images/oscommerce-1.png" width=60% height=60%>
   
-  2. Once the item was selected, click on "Add to basket" button to add the product to the shop cart. Pop-up message will provide with two options: select *Continue shopping* to continue explore the shop and *Go to cart* to start the payment flow. 
+  2. Add to Basket. Click the Add to Basket button to add the selected product to your shopping cart.
+  A pop-up message will appear with two options:
+  *  **Continue Shopping** – to keep browsing the store.
+  *  **Go to Cart** – to proceed to checkout.
 
   <img src="/images/oscommerce-2.png" width=60% height=60%>
   <img src="/images/oscommerce-3.png" width=60% height=60%>
 
-  3. Once *Go to cart* was chosen, press on *Pay with card* button to continue.
+  3. Proceed to Payment. If you selected Go to Cart, click the Pay with Card button to initiate the payment process.
 
   <img src="/images/oscommerce-4.png" width=60% height=60%>
   
-  4. Fill all required parameters on the form, confirm that you agree with the Terms & Policies, and then press the *Confirm and pay* button to finish the payment process.
+  4. Complete the Payment Form.
+  * Enter all required information in the payment form.
+  * Confirm acceptance of the **Terms & Policies**.
+  * Click **Confirm and Pay** to complete the transaction.
 
   <img src="/images/oscommerce-5.png" width=60% height=60%>
   <img src="/images/oscommerce-6.png" width=60% height=60%>
